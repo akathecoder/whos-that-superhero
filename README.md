@@ -39,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## LICENSE
 
-This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see [LICENCE.md](https://github.com/sparshagarwal25/whos-that-superhero/blob/master/LICENSE) for more details.
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see [LICENCE](https://github.com/sparshagarwal25/whos-that-superhero/blob/master/LICENSE) for more details.
 
 ## Acknowledgments
 
