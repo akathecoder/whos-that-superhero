@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="start"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_search_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/icons8_batman_logo" />
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/not_available"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:text="Batman" />
+
+    <!--    <TextView-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:id="@+id/tv_artist_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="NOT AVAILABLE"-->
+    <!--        android:textColor="@android:color/darker_gray"-->
+    <!--        android:textSize="15sp"-->
+    <!--        tools:text="Bruce Wayne" />-->
+
+</LinearLayout>

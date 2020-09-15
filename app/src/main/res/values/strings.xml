@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Who\'s That SuperHero</string>
+
+    <string name="search">Search</string>
+    <string name="no_results">No Results</string>
+    <string name="searching">Searching…</string>
+    <string name="not_available">NOT AVAILABLE</string>
+
 </resources>

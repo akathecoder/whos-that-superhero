@@ -13,6 +13,15 @@
     android:orientation="vertical"
     tools:context=".activities.SearchActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/app_name"
+        android:textSize="25sp" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
@@ -22,22 +31,82 @@
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
         app:endIconMode="clear_text"
-        app:hintEnabled="false">
+        app:hintEnabled="false"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/search_bar_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/search_bar_style"
-            android:hint="Search"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/search"
             android:imeOptions="actionSearch"
             android:inputType="text"
             android:paddingStart="25dp"
             android:paddingTop="15dp"
             android:paddingEnd="15dp"
             android:paddingBottom="15dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:focusable="true"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_search_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/no_results"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/loadingOverlay"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:alpha="0.4"-->
+    <!--        android:animateLayoutChanges="true"-->
+    <!--        android:background="@drawable/custom_loading_screen"-->
+    <!--        android:clickable="true"-->
+    <!--        android:visibility="visible"-->
+    <!--        android:elevation="4dp"-->
+    <!--        android:fitsSystemWindows="true"-->
+    <!--        />-->
+
+    <LinearLayout
+        android:id="@+id/loadingBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:elevation="4dp"
+            android:fitsSystemWindows="true"
+            android:indeterminate="true"
+            android:minWidth="200dp"
+            android:minHeight="200dp"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
 
 </LinearLayout>
